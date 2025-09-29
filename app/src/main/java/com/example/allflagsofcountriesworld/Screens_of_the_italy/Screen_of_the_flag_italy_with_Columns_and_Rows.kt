@@ -8,6 +8,8 @@ import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxHeight
 import androidx.compose.foundation.layout.fillMaxSize
+import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.tooling.preview.Preview
 import com.example.allflagsofcountriesworld.ui.theme.green
 import com.example.allflagsofcountriesworld.ui.theme.red
 
@@ -15,8 +17,16 @@ import com.example.allflagsofcountriesworld.ui.theme.red
 fun thescreen_italy_with_(modifier: Modifier = Modifier){
 Row(modifier= Modifier){
     Box(modifier=Modifier.fillMaxHeight().weight(1f).background(color=green))
-    Spacer(modifier= Modifier.fillMaxHeight().weight(1f))
+    Spacer(modifier= Modifier.fillMaxHeight().weight(1f)
+
+    )
     Box(modifier=Modifier.fillMaxHeight().weight(1f).background(color=red))
 
 }
+}
+@Preview(showBackground = true, showSystemUi = false)
+@Composable
+fun AboutScreenPreview(){
+    thescreen_italy_with_(modifier = Modifier.fillMaxSize().background(Color.Blue))
+
 }
