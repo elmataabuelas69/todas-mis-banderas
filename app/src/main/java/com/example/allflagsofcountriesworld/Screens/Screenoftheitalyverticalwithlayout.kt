@@ -16,10 +16,10 @@ import com.example.allflagsofcountriesworld.ui.theme.red
 import com.example.allflagsofcountriesworld.ui.theme.white
 
 @Composable
-fun horizonatlflag_oftheitaltwithlayouts(modifier: Modifier=Modifier){
-    ConstraintLayout(modifier= Modifier){
+fun horizonatlflagOftheitaltwithlayouts(modifier: Modifier=Modifier){
+    ConstraintLayout(modifier= modifier){
         val (box1, box2, box3)=createRefs()
-        Box(modifier=Modifier.size(size=200.dp).background(color= green).constrainAs(ref=box1){
+        Box(modifier=Modifier.background(color= green).constrainAs(ref=box1){
         start.linkTo(anchor = parent.start)
             end.linkTo(anchor=parent.end)
             top.linkTo(anchor = parent.top)
@@ -27,7 +27,7 @@ fun horizonatlflag_oftheitaltwithlayouts(modifier: Modifier=Modifier){
             height= Dimension.fillToConstraints
                 width= Dimension.fillToConstraints
         })
-        Box(modifier=Modifier.size(size=200.dp).background(color= white).constrainAs(ref=box2){
+        Box(modifier=Modifier.background(color= white).constrainAs(ref=box2){
             start.linkTo(anchor = parent.start)
             end.linkTo(anchor=parent.end)
             top.linkTo(anchor = box1.bottom)
@@ -35,11 +35,11 @@ fun horizonatlflag_oftheitaltwithlayouts(modifier: Modifier=Modifier){
             height= Dimension.fillToConstraints
             width= Dimension.fillToConstraints
         })
-        Box(modifier=Modifier.size(size=200.dp).background(color = red).constrainAs(ref=box3){
+        Box(modifier=Modifier.background(color = red).constrainAs(ref=box3){
             start.linkTo(anchor = parent.start)
             end.linkTo(anchor=parent.end)
             top.linkTo(anchor = box2.bottom)
-            bottom.linkTo(anchor = parent.top)
+            bottom.linkTo(anchor = parent.bottom)
             height= Dimension.fillToConstraints
             width= Dimension.fillToConstraints
         })
@@ -47,6 +47,6 @@ fun horizonatlflag_oftheitaltwithlayouts(modifier: Modifier=Modifier){
 }
 @Preview(showBackground = false, showSystemUi = true)
 @Composable
-fun showscreenmyflagwithlayout(modifier: Modifier=Modifier){
-horizonatlflag_oftheitaltwithlayouts(modifier = Modifier.fillMaxSize().background(Color.Blue))
+fun showscreenmyflagwithlayout(){
+horizonatlflagOftheitaltwithlayouts(modifier = Modifier.fillMaxSize().background(Color.Blue))
 }
