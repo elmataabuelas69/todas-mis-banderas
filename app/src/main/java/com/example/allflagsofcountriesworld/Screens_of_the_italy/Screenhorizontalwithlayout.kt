@@ -26,7 +26,7 @@ fun myflagwithlayouthorizontal(modifier:Modifier= Modifier){
     ConstraintLayout (modifier=modifier) {
         val (box1, box2, box3, image) = createRefs()
         Box(
-            modifier = Modifier.fillMaxWidth().background(color = green).size(size = 150.dp)
+            modifier = Modifier.background(color = green).size(size = 150.dp)
                 .constrainAs(ref = box1) {
                     start.linkTo(anchor = parent.start)
                     end.linkTo(anchor = parent.end)
@@ -38,7 +38,7 @@ fun myflagwithlayouthorizontal(modifier:Modifier= Modifier){
                 })
 
         Box(
-            modifier = Modifier.fillMaxWidth().background(color = white).size(size = 150.dp)
+            modifier = Modifier.background(color = white).size(size = 150.dp)
                 .constrainAs(ref = box2) {
                     start.linkTo(anchor = parent.start)
                     end.linkTo(anchor = parent.end)
@@ -58,7 +58,7 @@ fun myflagwithlayouthorizontal(modifier:Modifier= Modifier){
             }
         )
         Box(
-            modifier = Modifier.fillMaxWidth().background(color = red).size(size = 150.dp)
+            modifier = Modifier.background(color = red).size(size = 150.dp)
                 .constrainAs(ref = box3) {
                     start.linkTo(anchor = parent.start)
                     end.linkTo(anchor = parent.end)
