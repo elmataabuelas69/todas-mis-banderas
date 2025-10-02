@@ -46,5 +46,5 @@ fun horizonatlflag_oftheitaltwithlayouts(modifier: Modifier=Modifier){
 @Preview(showBackground = false, showSystemUi = true)
 @Composable
 fun showscreenmyflagwithlayout(){
-
+horizonatlflag_oftheitaltwithlayouts(modifier = Modifier)
 }
