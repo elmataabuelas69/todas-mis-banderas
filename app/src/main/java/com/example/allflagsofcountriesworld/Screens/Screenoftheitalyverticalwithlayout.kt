@@ -7,6 +7,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.constraintlayout.compose.ConstraintLayout
+import androidx.constraintlayout.compose.Dimension
 
 @Composable
 fun horizonatlflag_oftheitaltwithlayouts(modifier: Modifier=Modifier){
@@ -17,7 +18,7 @@ fun horizonatlflag_oftheitaltwithlayouts(modifier: Modifier=Modifier){
             end.linkTo(anchor=parent.end)
             top.linkTo(anchor = parent.top)
             bottom.linkTo(anchor = parent.top)
-            height=ConstrainsToFill();
+            height= Dimension.fillToConstrains()
                 width=
         })
     }
