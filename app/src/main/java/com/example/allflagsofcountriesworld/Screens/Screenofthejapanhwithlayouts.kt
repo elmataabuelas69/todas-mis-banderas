@@ -16,15 +16,16 @@ import androidx.constraintlayout.compose.ConstraintLayout
 import androidx.constraintlayout.compose.Dimension
 
 @Composable
-fun screenofthejapanhorizontal(modifier:Modifier= Modifier){
+fun screenofthejapanvertic(modifier:Modifier= Modifier){
     ConstraintLayout(modifier=modifier){
         val (box1, circle)=createRefs()
-        Box(modifier= Modifier.size(size = 250.dp).background(Color.White).constrainAs(ref=box1){
-            start.linkTo(parent.start)
-            end.linkTo((parent.end))
-            top.linkTo((parent.top))
-            bottom.linkTo((parent.bottom))
-            width= Dimension.fillToConstraints
+        Box(modifier= Modifier.background(Color.White).constrainAs(ref=box1){
+        start.linkTo(parent.start)
+        end.linkTo((parent.end))
+        top.linkTo((parent.top))
+        bottom.linkTo((parent.bottom))
+        width= Dimension.fillToConstraints
+            height= Dimension.fillToConstraints
         })
         Canvas(modifier = Modifier.size(200.dp).constrainAs(ref=circle){
             start.linkTo(parent.start)
@@ -34,7 +35,7 @@ fun screenofthejapanhorizontal(modifier:Modifier= Modifier){
         }) {
             drawCircle(
                 color = Color.Red,
-                radius = 180f,
+                radius = 280f,
                 center = Offset(size.width / 2, size.height / 2),
                 style = Fill
             )
@@ -45,6 +46,6 @@ fun screenofthejapanhorizontal(modifier:Modifier= Modifier){
 }
 @Preview(showBackground = false, showSystemUi = true)
 @Composable
-fun showscreen(){
-    screenofthejapanhorizontal(modifier = Modifier.fillMaxSize().background(Color.Black))
+fun showscreens(){
+    screenofthejapanvertic(modifier = Modifier.fillMaxSize().background(Color.Green))
 }
