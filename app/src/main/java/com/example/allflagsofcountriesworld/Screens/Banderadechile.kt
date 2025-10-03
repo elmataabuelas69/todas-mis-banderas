@@ -36,7 +36,7 @@ Column (modifier= Modifier) {
             modifier = Modifier
 
                 .height(height = 425.dp)
-                .weight(1f)
+                .weight(1.3f)
                 .background(color = blue), contentAlignment = Alignment.Center
         ) {
             Box(
@@ -60,7 +60,7 @@ Column (modifier= Modifier) {
             modifier = Modifier
 
                 .height(height = 425.dp)
-                .weight(2f)
+                .weight(1.7f)
                 .background(color = white)
         )
 
