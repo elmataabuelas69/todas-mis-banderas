@@ -26,7 +26,7 @@ fun screenofthejh(modifier: Modifier = Modifier){
                 radius=200f,
                 center = Offset(size.width/2, size.height/2),
                 style = Fill,
-                contentAlignment = Alignment.Center
+
             )
         }
     }

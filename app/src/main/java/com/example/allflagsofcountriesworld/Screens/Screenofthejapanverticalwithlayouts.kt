@@ -1,4 +1,4 @@
-@file:JvmName("ScreenofthejapanhwithlayoutsKt")
+@file:JvmName("ScreenofthejapanhorizwithlayoutsKt")
 
 package com.example.allflagsofcountriesworld.Screens
 
