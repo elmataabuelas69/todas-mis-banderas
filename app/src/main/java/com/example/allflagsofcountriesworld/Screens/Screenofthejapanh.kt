@@ -5,6 +5,7 @@ import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.fillMaxHeight
+import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.size
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
@@ -12,11 +13,12 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.geometry.Offset
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.drawscope.Fill
+import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.constraintlayout.compose.ConstraintLayout
 
 @Composable
-fun screenofthejh(modifier: Modifier = Modifier){
+fun screenofthejhor(modifier: Modifier = Modifier){
     Row(modifier= Modifier) {
         Box(modifier = Modifier.fillMaxHeight().weight(weight = 3f).background(Color.White))
         Canvas(modifier= Modifier.size(size=200.dp)) {
@@ -30,4 +32,9 @@ fun screenofthejh(modifier: Modifier = Modifier){
             )
         }
     }
+}
+@Preview(showBackground = false, showSystemUi = true)
+@Composable
+fun shows(){
+    screenofthejhor(modifier = Modifier.fillMaxSize().background(Color.Green))
 }
