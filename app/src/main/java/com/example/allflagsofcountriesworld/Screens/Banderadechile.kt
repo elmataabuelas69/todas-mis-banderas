@@ -54,7 +54,7 @@ Column (modifier= Modifier) {
                         drawPath(roundedPolygonPath, color = Color.White)
                     }
                 }
-                .size(100.dp),ContentAligment= Alignment.Center)
+                .size(100.dp), contentAlignment = Alignment.Center)
         }
         Box(
             modifier = Modifier
