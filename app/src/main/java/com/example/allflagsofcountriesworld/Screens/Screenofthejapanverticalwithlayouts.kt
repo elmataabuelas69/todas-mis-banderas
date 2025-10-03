@@ -8,21 +8,15 @@ import androidx.compose.foundation.layout.size
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.geometry.Offset
-import androidx.compose.ui.graphics.Canvas
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.PaintingStyle.Companion.Stroke
-import androidx.compose.ui.graphics.Path
 import androidx.compose.ui.graphics.drawscope.Fill
-import androidx.compose.ui.graphics.drawscope.Stroke
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.constraintlayout.compose.ConstraintLayout
 import androidx.constraintlayout.compose.Dimension
-import java.util.Arrays.fill
-import kotlin.io.path.Path
 
 @Composable
-fun screenofthejapanvertical(modifier:Modifier= Modifier){
+fun screenofthejapanvertic(modifier:Modifier= Modifier){
     ConstraintLayout(modifier=modifier){
         val (box1, circle)=createRefs()
         Box(modifier= Modifier.background(Color.White).constrainAs(ref=box1){
@@ -52,6 +46,6 @@ fun screenofthejapanvertical(modifier:Modifier= Modifier){
 }
 @Preview(showBackground = false, showSystemUi = true)
 @Composable
-fun showscreen(){
-    screenofthejapanvertical(modifier = Modifier.fillMaxSize().background(Color.Green))
+fun showscreens(){
+    screenofthejapanvertic(modifier = Modifier.fillMaxSize().background(Color.Green))
 }
