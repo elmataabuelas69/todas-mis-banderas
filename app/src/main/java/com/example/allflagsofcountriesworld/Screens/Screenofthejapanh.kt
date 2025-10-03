@@ -6,6 +6,7 @@ import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.fillMaxHeight
 import androidx.compose.foundation.layout.fillMaxSize
+import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.size
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
@@ -20,16 +21,18 @@ import androidx.constraintlayout.compose.ConstraintLayout
 @Composable
 fun screenofthejhor(modifier: Modifier = Modifier){
     Row(modifier= Modifier) {
-        Box(modifier = Modifier.fillMaxHeight().weight(weight = 3f).background(Color.White))
-        Canvas(modifier= Modifier.size(size=200.dp)) {
+        Box(modifier = Modifier.fillMaxSize().background(Color.White), contentAlignment = Alignment.Center)
+        {
+            Canvas(modifier = Modifier.size(size = 200.dp)) {
 
-            drawCircle(
-                color=Color.Red,
-                radius=200f,
-                center = Offset(size.width/2, size.height/2),
-                style = Fill,
+                drawCircle(
+                    color = Color.Red,
+                    radius = 300f,
+                    center = Offset(size.width / 2, size.height / 2),
+                    style = Fill,
 
-            )
+                    )
+            }
         }
     }
 }
