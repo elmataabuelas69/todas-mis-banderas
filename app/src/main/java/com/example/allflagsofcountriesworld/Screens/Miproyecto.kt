@@ -3,6 +3,7 @@ package com.example.allflagsofcountriesworld.Screens
 import androidx.compose.foundation.background
 import androidx.compose.foundation.border
 import androidx.compose.foundation.layout.Box
+import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.aspectRatio
 import androidx.compose.foundation.layout.fillMaxHeight
@@ -18,19 +19,21 @@ import androidx.constraintlayout.compose.ConstraintLayout
 import com.example.allflagsofcountriesworld.ui.theme.black
 
 @Composable
-fun miprimerpixel_art(modifier: Modifier= Modifier.fillMaxSize()){
-Row(modifier=Modifier) {
-    repeat(41) {
-        Box(
-            modifier = Modifier
-                .weight(1f) // Cada Box ocupa el mismo ancho
-                .aspectRatio(1f) // Mantiene forma cuadrada
-                .border(1.dp, Color.Black)
-        )
+fun miprimerpixel_art(modifier: Modifier= Modifier.fillMaxSize()) {
+    Row(modifier = Modifier) {
+        Column(modifier = Modifier) {
+            repeat(10) {
+                Box(
+                    modifier = Modifier
+                        .weight(1f)
+                        .aspectRatio(1f)
+                        .border(1.dp, Color.Black)
+                )
+            }
+        }
     }
+}
 
-}
-}
 
 @Preview(showBackground = false, showSystemUi = true)
 @Composable
