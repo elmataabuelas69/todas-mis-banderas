@@ -20,8 +20,8 @@ import com.example.allflagsofcountriesworld.ui.theme.black
 
 @Composable
 fun miprimerpixel_art(modifier: Modifier= Modifier.fillMaxSize()) {
-    Row(modifier = Modifier) {
-        Column(modifier = Modifier) {
+    Column(modifier = Modifier) {
+        Row(modifier = Modifier) {
             repeat(10) {
                 Box(
                     modifier = Modifier
