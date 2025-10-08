@@ -30,3 +30,8 @@ val color12=Color(0xFFF4BFC0)
 val color13=Color(0xFFF2C0D5)
 val color14=Color(0xFFCAA58B)
 val color15=Color(0xFF866D5E)
+
+val color16=Color(0xFF2A413B)
+val color17=Color(0xFFDC9D2D)
+val color18=Color(0xFFF7CE1F)
+val  color19=Color(0xFFFF8603)

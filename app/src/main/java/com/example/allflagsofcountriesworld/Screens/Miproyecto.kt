@@ -8,14 +8,11 @@ import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.aspectRatio
 import androidx.compose.foundation.layout.fillMaxHeight
 import androidx.compose.foundation.layout.fillMaxSize
-import androidx.compose.foundation.layout.fillMaxWidth
-import androidx.compose.foundation.layout.padding
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
-import androidx.constraintlayout.compose.ConstraintLayout
 import com.example.allflagsofcountriesworld.ui.theme.black
 import com.example.allflagsofcountriesworld.ui.theme.color1
 import com.example.allflagsofcountriesworld.ui.theme.color10
@@ -23,6 +20,8 @@ import com.example.allflagsofcountriesworld.ui.theme.color11
 import com.example.allflagsofcountriesworld.ui.theme.color12
 import com.example.allflagsofcountriesworld.ui.theme.color13
 import com.example.allflagsofcountriesworld.ui.theme.color14
+import com.example.allflagsofcountriesworld.ui.theme.color15
+import com.example.allflagsofcountriesworld.ui.theme.color16
 import com.example.allflagsofcountriesworld.ui.theme.color2
 import com.example.allflagsofcountriesworld.ui.theme.color3
 import com.example.allflagsofcountriesworld.ui.theme.color4
@@ -37,7 +36,7 @@ fun miprimerpixel_art(modifier: Modifier= Modifier.fillMaxHeight()) {
     Column(modifier = Modifier) {
         Row(modifier = Modifier) {
 
-            repeat(50) {
+            repeat(60) {
                 Box(
                     modifier = Modifier
                         .weight(1f)
@@ -50,7 +49,7 @@ fun miprimerpixel_art(modifier: Modifier= Modifier.fillMaxHeight()) {
 
         }
         Row(modifier = Modifier) {
-            repeat(24) {
+            repeat(29) {
                 Box(
                     modifier = Modifier
                         .weight(1f)
@@ -96,7 +95,7 @@ fun miprimerpixel_art(modifier: Modifier= Modifier.fillMaxHeight()) {
                     .border(1.dp, Color.Black)
                     .background(color = color4)
             )
-            repeat(19) {
+            repeat(24) {
                 Box(
                     modifier = Modifier
                         .weight(1f)
@@ -107,7 +106,7 @@ fun miprimerpixel_art(modifier: Modifier= Modifier.fillMaxHeight()) {
             }
         }
         Row(modifier = Modifier) {
-            repeat(21) {
+            repeat(26) {
                 Box(modifier = Modifier.weight(1f).aspectRatio(1f).border(1.dp, Color.Black))
             }
             repeat(4) {
@@ -144,13 +143,13 @@ fun miprimerpixel_art(modifier: Modifier= Modifier.fillMaxHeight()) {
                 modifier = Modifier.weight(1f).aspectRatio(1f).border(1.dp, Color.Black)
                     .background(color = color2)
             )
-            repeat(15) {
+            repeat(20) {
                 Box(modifier = Modifier.weight(1f).aspectRatio(1f).border(1.dp, Color.Black))
             }
 
         }
         Row(modifier = Modifier) {
-            repeat(19) {
+            repeat(24) {
                 Box(modifier = Modifier.weight(1f).aspectRatio(1f).border(1.dp, Color.Black))
             }
             repeat(2) {
@@ -159,21 +158,36 @@ fun miprimerpixel_art(modifier: Modifier= Modifier.fillMaxHeight()) {
                         .background(color = color2)
                 )
             }
-            Box(modifier = Modifier.weight(1f).aspectRatio(1f).border(1.dp, Color.Black).background(color = color6))
-            repeat(11){
-                Box(modifier = Modifier.weight(1f).aspectRatio(1f).border(1.dp, Color.Black).background(color = color7))
+            Box(
+                modifier = Modifier.weight(1f).aspectRatio(1f).border(1.dp, Color.Black)
+                    .background(color = color6)
+            )
+            repeat(11) {
+                Box(
+                    modifier = Modifier.weight(1f).aspectRatio(1f).border(1.dp, Color.Black)
+                        .background(color = color7)
+                )
             }
-            Box(modifier = Modifier.weight(1f).aspectRatio(1f).border(1.dp, Color.Black).background(color = color8))
-           repeat(3){
-               Box(modifier = Modifier.weight(1f).aspectRatio(1f).border(1.dp, Color.Black).background(color = black))
-           }
-            Box(modifier = Modifier.weight(1f).aspectRatio(1f).border(1.dp, Color.Black).background(color = color6))
-            repeat(12){
+            Box(
+                modifier = Modifier.weight(1f).aspectRatio(1f).border(1.dp, Color.Black)
+                    .background(color = color8)
+            )
+            repeat(3) {
+                Box(
+                    modifier = Modifier.weight(1f).aspectRatio(1f).border(1.dp, Color.Black)
+                        .background(color = black)
+                )
+            }
+            Box(
+                modifier = Modifier.weight(1f).aspectRatio(1f).border(1.dp, Color.Black)
+                    .background(color = color6)
+            )
+            repeat(17) {
                 Box(modifier = Modifier.weight(1f).aspectRatio(1f).border(1.dp, Color.Black))
             }
         }
-        Row(modifier=Modifier) {
-            repeat(18) {
+        Row(modifier = Modifier) {
+            repeat(23) {
                 Box(modifier = Modifier.weight(1f).aspectRatio(1f).border(1.dp, Color.Black))
             }
             Box(
@@ -214,181 +228,824 @@ fun miprimerpixel_art(modifier: Modifier= Modifier.fillMaxHeight()) {
                 modifier = Modifier.weight(1f).aspectRatio(1f).border(1.dp, Color.Black)
                     .background(color = color6)
             )
+            repeat(15) {
+                Box(modifier = Modifier.weight(1f).aspectRatio(1f).border(1.dp, Color.Black))
+            }
+        }
+        Row(modifier = Modifier) {
+            repeat(22) {
+                Box(modifier = Modifier.weight(1f).aspectRatio(1f).border(1.dp, Color.Black))
+            }
+            Box(
+                modifier = Modifier.weight(1f).aspectRatio(1f).border(1.dp, Color.Black)
+                    .background(color = black)
+            )
+            Box(
+                modifier = Modifier.weight(1f).aspectRatio(1f).border(1.dp, Color.Black)
+                    .background(color = color10)
+            )
+            repeat(3) {
+                Box(
+                    modifier = Modifier.weight(1f).aspectRatio(1f).border(1.dp, Color.Black)
+                        .background(color = color7)
+                )
+            }
+            Box(
+                modifier = Modifier.weight(1f).aspectRatio(1f).border(1.dp, Color.Black)
+                    .background(color = color9)
+            )
+            repeat(2) {
+                Box(
+                    modifier = Modifier.weight(1f).aspectRatio(1f).border(1.dp, Color.Black)
+                        .background(color = color7)
+                )
+            }
+            repeat(2) {
+                Box(
+                    modifier = Modifier.weight(1f).aspectRatio(1f).border(1.dp, Color.Black)
+                        .background(color = color9)
+                )
+            }
+            repeat(2) {
+                Box(
+                    modifier = Modifier.weight(1f).aspectRatio(1f).border(1.dp, Color.Black)
+                        .background(color = color7)
+                )
+            }
+            Box(
+                modifier = Modifier.weight(1f).aspectRatio(1f).border(1.dp, Color.Black)
+                    .background(color = color9)
+            )
+            repeat(2) {
+                Box(
+                    modifier = Modifier.weight(1f).aspectRatio(1f).border(1.dp, Color.Black)
+                        .background(color = color7)
+                )
+            }
+            Box(
+                modifier = Modifier.weight(1f).aspectRatio(1f).border(1.dp, Color.Black)
+                    .background(color = color9)
+            )
+            repeat(5) {
+                Box(
+                    modifier = Modifier.weight(1f).aspectRatio(1f).border(1.dp, Color.Black)
+                        .background(color = color7)
+                )
+            }
+            Box(
+                modifier = Modifier.weight(1f).aspectRatio(1f).border(1.dp, Color.Black)
+                    .background(color = color1)
+            )
+            repeat(2) {
+                Box(
+                    modifier = Modifier.weight(1f).aspectRatio(1f).border(1.dp, Color.Black)
+                        .background(color = black)
+                )
+            }
+            Box(
+                modifier = Modifier.weight(1f).aspectRatio(1f).border(1.dp, Color.Black)
+                    .background(color = color11)
+            )
+            repeat(13) {
+                Box(modifier = Modifier.weight(1f).aspectRatio(1f).border(1.dp, Color.Black))
+            }
+        }
+        Row(modifier = Modifier) {
+            repeat(21) {
+                Box(modifier = Modifier.weight(1f).aspectRatio(1f).border(1.dp, Color.Black))
+            }
+            Box(
+                modifier = Modifier.weight(1f).aspectRatio(1f).border(1.dp, Color.Black)
+                    .background(color = black)
+            )
+            Box(
+                modifier = Modifier.weight(1f).aspectRatio(1f).border(1.dp, Color.Black)
+                    .background(color = color12)
+            )
+            repeat(2) {
+                Box(
+                    modifier = Modifier.weight(1f).aspectRatio(1f).border(1.dp, Color.Black)
+                        .background(color = color7)
+                )
+            }
+            Box(
+                modifier = Modifier.weight(1f).aspectRatio(1f).border(1.dp, Color.Black)
+                    .background(color = color9)
+            )
+            repeat(2) {
+                Box(
+                    modifier = Modifier.weight(1f).aspectRatio(1f).border(1.dp, Color.Black)
+                        .background(color = color7)
+                )
+            }
+            repeat(3) {
+                Box(
+                    modifier = Modifier.weight(1f).aspectRatio(1f).border(1.dp, Color.Black)
+                        .background(color = color9)
+                )
+            }
+            repeat(2) {
+                Box(
+                    modifier = Modifier.weight(1f).aspectRatio(1f).border(1.dp, Color.Black)
+                        .background(color = color7)
+                )
+            }
+            repeat(2) {
+                Box(
+                    modifier = Modifier.weight(1f).aspectRatio(1f).border(1.dp, Color.Black)
+                        .background(color = color9)
+                )
+            }
+            Box(
+                modifier = Modifier.weight(1f).aspectRatio(1f).border(1.dp, Color.Black)
+                    .background(color = color7)
+            )
+            Box(
+                modifier = Modifier.weight(1f).aspectRatio(1f).border(1.dp, Color.Black)
+                    .background(color = color9)
+            )
+            repeat(2) {
+                Box(
+                    modifier = Modifier.weight(1f).aspectRatio(1f).border(1.dp, Color.Black)
+                        .background(color = color7)
+                )
+            }
+            Box(
+                modifier = Modifier.weight(1f).aspectRatio(1f).border(1.dp, Color.Black)
+                    .background(color = color9)
+            )
+            Box(
+                modifier = Modifier.weight(1f).aspectRatio(1f).border(1.dp, Color.Black)
+                    .background(color = color7)
+            )
+            Box(
+                modifier = Modifier.weight(1f).aspectRatio(1f).border(1.dp, Color.Black)
+                    .background(color = color9)
+            )
+            repeat(3) {
+                Box(
+                    modifier = Modifier.weight(1f).aspectRatio(1f).border(1.dp, Color.Black)
+                        .background(color = color7)
+                )
+            }
+            Box(
+                modifier = Modifier.weight(1f).aspectRatio(1f).border(1.dp, Color.Black)
+                    .background(color = color6)
+            )
+            repeat(2) {
+                Box(
+                    modifier = Modifier.weight(1f).aspectRatio(1f).border(1.dp, Color.Black)
+                        .background(color = black)
+                )
+            }
+            repeat(12) {
+                Box(modifier = Modifier.weight(1f).aspectRatio(1f).border(1.dp, Color.Black))
+            }
+        }
+        Row(modifier = Modifier) {
+            repeat(17) {
+                Box(modifier = Modifier.weight(1f).aspectRatio(1f).border(1.dp, Color.Black))
+            }
+            Box(
+                modifier = Modifier.weight(1f).aspectRatio(1f).border(1.dp, Color.Black)
+                    .background(color = color4)
+            )
+            repeat(4) {
+                Box(
+                    modifier = Modifier.weight(1f).aspectRatio(1f).border(1.dp, Color.Black)
+                        .background(color = black)
+                )
+            }
+            Box(
+                modifier = Modifier.weight(1f).aspectRatio(1f).border(1.dp, Color.Black)
+                    .background(color = color4)
+            )
+            repeat(2) {
+                Box(
+                    modifier = Modifier.weight(1f).aspectRatio(1f).border(1.dp, Color.Black)
+                        .background(color = color7)
+                )
+            }
+            Box(
+                modifier = Modifier.weight(1f).aspectRatio(1f).border(1.dp, Color.Black)
+                    .background(color = color9)
+            )
+            repeat(2) {
+                Box(
+                    modifier = Modifier.weight(1f).aspectRatio(1f).border(1.dp, Color.Black)
+                        .background(color = color7)
+                )
+            }
+            Box(
+                modifier = Modifier.weight(1f).aspectRatio(1f).border(1.dp, Color.Black)
+                    .background(color = color9)
+            )
+            repeat(3) {
+                Box(
+                    modifier = Modifier.weight(1f).aspectRatio(1f).border(1.dp, Color.Black)
+                        .background(color = color7)
+                )
+            }
+            Box(
+                modifier = Modifier.weight(1f).aspectRatio(1f).border(1.dp, Color.Black)
+                    .background(color = color12)
+            )
+            Box(
+                modifier = Modifier.weight(1f).aspectRatio(1f).border(1.dp, Color.Black)
+                    .background(color = color13)
+            )
+            Box(
+                modifier = Modifier.weight(1f).aspectRatio(1f).border(1.dp, Color.Black)
+                    .background(color = color12)
+            )
+            Box(
+                modifier = Modifier.weight(1f).aspectRatio(1f).border(1.dp, Color.Black)
+                    .background(color = color7)
+            )
+            Box(
+                modifier = Modifier.weight(1f).aspectRatio(1f).border(1.dp, Color.Black)
+                    .background(color = color13)
+            )
+            Box(
+                modifier = Modifier.weight(1f).aspectRatio(1f).border(1.dp, Color.Black)
+                    .background(color = color7)
+            )
+            Box(
+                modifier = Modifier.weight(1f).aspectRatio(1f).border(1.dp, Color.Black)
+                    .background(color = color9)
+            )
+            repeat(3) {
+                Box(
+                    modifier = Modifier.weight(1f).aspectRatio(1f).border(1.dp, Color.Black)
+                        .background(color = color7)
+                )
+            }
+            Box(
+                modifier = Modifier.weight(1f).aspectRatio(1f).border(1.dp, Color.Black)
+                    .background(color = color9)
+            )
+            repeat(3) {
+                Box(
+                    modifier = Modifier.weight(1f).aspectRatio(1f).border(1.dp, Color.Black)
+                        .background(color = color7)
+                )
+            }
+            Box(
+                modifier = Modifier.weight(1f).aspectRatio(1f).border(1.dp, Color.Black)
+                    .background(color = color12)
+            )
+            repeat(2) {
+                Box(
+                    modifier = Modifier.weight(1f).aspectRatio(1f).border(1.dp, Color.Black)
+                        .background(color = black)
+                )
+            }
+            repeat(11) {
+                Box(modifier = Modifier.weight(1f).aspectRatio(1f).border(1.dp, Color.Black))
+            }
+        }
+        Row(modifier = Modifier) {
+            repeat(16) {
+                Box(modifier = Modifier.weight(1f).aspectRatio(1f).border(1.dp, Color.Black))
+            }
+            repeat(2) {
+                Box(
+                    modifier = Modifier.weight(1f).aspectRatio(1f).border(1.dp, Color.Black)
+                        .background(color = black)
+                )
+            }
+            Box(
+                modifier = Modifier.weight(1f).aspectRatio(1f).border(1.dp, Color.Black)
+                    .background(color = color14)
+            )
+            Box(
+                modifier = Modifier.weight(1f).aspectRatio(1f).border(1.dp, Color.Black)
+                    .background(color = color7)
+            )
+            Box(
+                modifier = Modifier.weight(1f).aspectRatio(1f).border(1.dp, Color.Black)
+                    .background(color = color13)
+            )
+            Box(
+                modifier = Modifier.weight(1f).aspectRatio(1f).border(1.dp, Color.Black)
+                    .background(color = color1)
+            )
+            Box(
+                modifier = Modifier.weight(1f).aspectRatio(1f).border(1.dp, Color.Black)
+                    .background(color = black)
+            )
+            Box(
+                modifier = Modifier.weight(1f).aspectRatio(1f).border(1.dp, Color.Black)
+                    .background(color = color2)
+            )
+            Box(
+                modifier = Modifier.weight(1f).aspectRatio(1f).border(1.dp, Color.Black)
+                    .background(color = color12)
+            )
+            repeat(2) {
+                Box(
+                    modifier = Modifier.weight(1f).aspectRatio(1f).border(1.dp, Color.Black)
+                        .background(color = color7)
+                )
+            }
+            Box(
+                modifier = Modifier.weight(1f).aspectRatio(1f).border(1.dp, Color.Black)
+                    .background(color = color9)
+            )
+            repeat(2) {
+                Box(
+                    modifier = Modifier.weight(1f).aspectRatio(1f).border(1.dp, Color.Black)
+                        .background(color = color7)
+                )
+            }
+            Box(
+                modifier = Modifier.weight(1f).aspectRatio(1f).border(1.dp, Color.Black)
+                    .background(color = color1)
+            )
+            repeat(5) {
+                Box(
+                    modifier = Modifier.weight(1f).aspectRatio(1f).border(1.dp, Color.Black)
+                        .background(color = black)
+                )
+            }
+            Box(
+                modifier = Modifier.weight(1f).aspectRatio(1f).border(1.dp, Color.Black)
+                    .background(color = color1)
+            )
+            Box(
+                modifier = Modifier.weight(1f).aspectRatio(1f).border(1.dp, Color.Black)
+                    .background(color = color7)
+            )
+            repeat(3) {
+                Box(
+                    modifier = Modifier.weight(1f).aspectRatio(1f).border(1.dp, Color.Black)
+                        .background(color = color9)
+                )
+            }
+            repeat(2) {
+                Box(
+                    modifier = Modifier.weight(1f).aspectRatio(1f).border(1.dp, Color.Black)
+                        .background(color = color7)
+                )
+            }
+            Box(
+                modifier = Modifier.weight(1f).aspectRatio(1f).border(1.dp, Color.Black)
+                    .background(color = color9)
+            )
+            repeat(3) {
+                Box(
+                    modifier = Modifier.weight(1f).aspectRatio(1f).border(1.dp, Color.Black)
+                        .background(color = color7)
+                )
+            }
+            Box(
+                modifier = Modifier.weight(1f).aspectRatio(1f).border(1.dp, Color.Black)
+                    .background(color = color12)
+            )
+            repeat(2) {
+                Box(
+                    modifier = Modifier.weight(1f).aspectRatio(1f).border(1.dp, Color.Black)
+                        .background(color = black)
+                )
+            }
             repeat(10) {
                 Box(modifier = Modifier.weight(1f).aspectRatio(1f).border(1.dp, Color.Black))
             }
         }
-        Row(modifier=Modifier){
-            repeat(17){
+        Row(modifier = Modifier) {
+            repeat(15) {
                 Box(modifier = Modifier.weight(1f).aspectRatio(1f).border(1.dp, Color.Black))
             }
-            Box(modifier = Modifier.weight(1f).aspectRatio(1f).border(1.dp, Color.Black).background(color = black))
-            Box(modifier = Modifier.weight(1f).aspectRatio(1f).border(1.dp, Color.Black).background(color = color10))
-            repeat(3){
-                Box(modifier = Modifier.weight(1f).aspectRatio(1f).border(1.dp, Color.Black).background(color = color7))
+            Box(
+                modifier = Modifier.weight(1f).aspectRatio(1f).border(1.dp, Color.Black)
+                    .background(color = black)
+            )
+            Box(
+                modifier = Modifier.weight(1f).aspectRatio(1f).border(1.dp, Color.Black)
+                    .background(color = color13)
+            )
+            repeat(6) {
+                Box(
+                    modifier = Modifier.weight(1f).aspectRatio(1f).border(1.dp, Color.Black)
+                        .background(color = color7)
+                )
             }
-            Box(modifier = Modifier.weight(1f).aspectRatio(1f).border(1.dp, Color.Black).background(color = color9))
-           repeat(2){
-               Box(modifier = Modifier.weight(1f).aspectRatio(1f).border(1.dp, Color.Black).background(color = color7))
-           }
-            repeat(2){
-                Box(modifier = Modifier.weight(1f).aspectRatio(1f).border(1.dp, Color.Black).background(color = color9))
+            Box(
+                modifier = Modifier.weight(1f).aspectRatio(1f).border(1.dp, Color.Black)
+                    .background(color = black)
+            )
+            Box(
+                modifier = Modifier.weight(1f).aspectRatio(1f).border(1.dp, Color.Black)
+                    .background(color = color15)
+            )
+            repeat(3) {
+                Box(
+                    modifier = Modifier.weight(1f).aspectRatio(1f).border(1.dp, Color.Black)
+                        .background(color = color7)
+                )
             }
-            repeat(2){
-                Box(modifier = Modifier.weight(1f).aspectRatio(1f).border(1.dp, Color.Black).background(color = color7))
+            Box(
+                modifier = Modifier.weight(1f).aspectRatio(1f).border(1.dp, Color.Black)
+                    .background(color = color9)
+            )
+            Box(
+                modifier = Modifier.weight(1f).aspectRatio(1f).border(1.dp, Color.Black)
+                    .background(color = color2)
+            )
+            Box(
+                modifier = Modifier.weight(1f).aspectRatio(1f).border(1.dp, Color.Black)
+                    .background(color = black)
+            )
+            Box(
+                modifier = Modifier.weight(1f).aspectRatio(1f).border(1.dp, Color.Black)
+                    .background(color = color1)
+            )
+            repeat(3) {
+                Box(
+                    modifier = Modifier.weight(1f).aspectRatio(1f).border(1.dp, Color.Black)
+                        .background(color = color7)
+                )
             }
-            Box(modifier = Modifier.weight(1f).aspectRatio(1f).border(1.dp, Color.Black).background(color = color9))
-            repeat(2){
-                Box(modifier = Modifier.weight(1f).aspectRatio(1f).border(1.dp, Color.Black).background(color = color7))
+            Box(
+                modifier = Modifier.weight(1f).aspectRatio(1f).border(1.dp, Color.Black)
+                    .background(color = color12)
+            )
+            repeat(2) {
+                Box(
+                    modifier = Modifier.weight(1f).aspectRatio(1f).border(1.dp, Color.Black)
+                        .background(color = black)
+                )
             }
-            Box(modifier = Modifier.weight(1f).aspectRatio(1f).border(1.dp, Color.Black).background(color = color9))
-            repeat(5){
-                Box(modifier = Modifier.weight(1f).aspectRatio(1f).border(1.dp, Color.Black).background(color = color7))
+            Box(
+                modifier = Modifier.weight(1f).aspectRatio(1f).border(1.dp, Color.Black)
+                    .background(color = color12)
+            )
+            repeat(2) {
+                Box(
+                    modifier = Modifier.weight(1f).aspectRatio(1f).border(1.dp, Color.Black)
+                        .background(color = color7)
+                )
             }
-            Box(modifier = Modifier.weight(1f).aspectRatio(1f).border(1.dp, Color.Black).background(color = color1))
-            repeat(2){
-                Box(modifier = Modifier.weight(1f).aspectRatio(1f).border(1.dp, Color.Black).background(color = black))
+            Box(
+                modifier = Modifier.weight(1f).aspectRatio(1f).border(1.dp, Color.Black)
+                    .background(color = color9)
+            )
+            Box(
+                modifier = Modifier.weight(1f).aspectRatio(1f).border(1.dp, Color.Black)
+                    .background(color = color7)
+            )
+            Box(
+                modifier = Modifier.weight(1f).aspectRatio(1f).border(1.dp, Color.Black)
+                    .background(color = color9)
+            )
+            Box(
+                modifier = Modifier.weight(1f).aspectRatio(1f).border(1.dp, Color.Black)
+                    .background(color = color7)
+            )
+            repeat(2) {
+                Box(
+                    modifier = Modifier.weight(1f).aspectRatio(1f).border(1.dp, Color.Black)
+                        .background(color = color9)
+                )
             }
-            Box(modifier = Modifier.weight(1f).aspectRatio(1f).border(1.dp, Color.Black).background(color = color11))
-         repeat(8){
-             Box(modifier = Modifier.weight(1f).aspectRatio(1f).border(1.dp, Color.Black))
-         }
-        }
-        Row(modifier=Modifier){
-            repeat(16){
-                Box(modifier = Modifier.weight(1f).aspectRatio(1f).border(1.dp, Color.Black))
+            repeat(2) {
+                Box(
+                    modifier = Modifier.weight(1f).aspectRatio(1f).border(1.dp, Color.Black)
+                        .background(color = color7)
+                )
             }
-            Box(modifier = Modifier.weight(1f).aspectRatio(1f).border(1.dp, Color.Black).background(color = black))
-            Box(modifier = Modifier.weight(1f).aspectRatio(1f).border(1.dp, Color.Black).background(color = color12))
-            repeat(2){
-                Box(modifier = Modifier.weight(1f).aspectRatio(1f).border(1.dp, Color.Black).background(color = color7))
+            repeat(2) {
+                Box(
+                    modifier = Modifier.weight(1f).aspectRatio(1f).border(1.dp, Color.Black)
+                        .background(color = black)
+                )
             }
-            Box(modifier = Modifier.weight(1f).aspectRatio(1f).border(1.dp, Color.Black).background(color = color9))
-          repeat(2){
-              Box(modifier = Modifier.weight(1f).aspectRatio(1f).border(1.dp, Color.Black).background(color = color7))
-          }
-            repeat(3){
-                Box(modifier = Modifier.weight(1f).aspectRatio(1f).border(1.dp, Color.Black).background(color = color9))
-            }
-            repeat(2){
-                Box(modifier = Modifier.weight(1f).aspectRatio(1f).border(1.dp, Color.Black).background(color = color7))
-            }
-            repeat(2){
-                Box(modifier = Modifier.weight(1f).aspectRatio(1f).border(1.dp, Color.Black).background(color = color9))
-            }
-            Box(modifier = Modifier.weight(1f).aspectRatio(1f).border(1.dp, Color.Black).background(color = color7))
-            Box(modifier = Modifier.weight(1f).aspectRatio(1f).border(1.dp, Color.Black).background(color = color9))
-            repeat(2){
-                Box(modifier = Modifier.weight(1f).aspectRatio(1f).border(1.dp, Color.Black).background(color = color7))
-            }
-            Box(modifier = Modifier.weight(1f).aspectRatio(1f).border(1.dp, Color.Black).background(color = color9))
-            Box(modifier = Modifier.weight(1f).aspectRatio(1f).border(1.dp, Color.Black).background(color = color7))
-            Box(modifier = Modifier.weight(1f).aspectRatio(1f).border(1.dp, Color.Black).background(color = color9))
-            repeat(3){
-                Box(modifier = Modifier.weight(1f).aspectRatio(1f).border(1.dp, Color.Black).background(color = color7))
-            }
-            Box(modifier = Modifier.weight(1f).aspectRatio(1f).border(1.dp, Color.Black).background(color = color6))
-            repeat(2){
-                Box(modifier = Modifier.weight(1f).aspectRatio(1f).border(1.dp, Color.Black).background(color = black))
-            }
-            repeat(7){
-                Box(modifier = Modifier.weight(1f).aspectRatio(1f).border(1.dp, Color.Black))
-            }
-        }
-        Row(modifier=Modifier){
-            repeat(12){
-                Box(modifier = Modifier.weight(1f).aspectRatio(1f).border(1.dp, Color.Black))
-            }
-            Box(modifier = Modifier.weight(1f).aspectRatio(1f).border(1.dp, Color.Black).background(color = color4))
-            repeat(4){
-                Box(modifier = Modifier.weight(1f).aspectRatio(1f).border(1.dp, Color.Black).background(color = black))
-            }
-            Box(modifier = Modifier.weight(1f).aspectRatio(1f).border(1.dp, Color.Black).background(color = color4))
-            repeat(2){
-                Box(modifier = Modifier.weight(1f).aspectRatio(1f).border(1.dp, Color.Black).background(color = color7))
-            }
-            Box(modifier = Modifier.weight(1f).aspectRatio(1f).border(1.dp, Color.Black).background(color = color9))
-            repeat(2){
-                Box(modifier = Modifier.weight(1f).aspectRatio(1f).border(1.dp, Color.Black).background(color = color7))
-            }
-            Box(modifier = Modifier.weight(1f).aspectRatio(1f).border(1.dp, Color.Black).background(color = color9))
-            repeat(3){
-                Box(modifier = Modifier.weight(1f).aspectRatio(1f).border(1.dp, Color.Black).background(color = color7))
-            }
-            Box(modifier = Modifier.weight(1f).aspectRatio(1f).border(1.dp, Color.Black).background(color = color12))
-            Box(modifier = Modifier.weight(1f).aspectRatio(1f).border(1.dp, Color.Black).background(color = color13))
-            Box(modifier = Modifier.weight(1f).aspectRatio(1f).border(1.dp, Color.Black).background(color = color12))
-            Box(modifier = Modifier.weight(1f).aspectRatio(1f).border(1.dp, Color.Black).background(color = color7))
-            Box(modifier = Modifier.weight(1f).aspectRatio(1f).border(1.dp, Color.Black).background(color = color13))
-            Box(modifier = Modifier.weight(1f).aspectRatio(1f).border(1.dp, Color.Black).background(color = color7))
-            Box(modifier = Modifier.weight(1f).aspectRatio(1f).border(1.dp, Color.Black).background(color = color9))
-            repeat(3){
-                Box(modifier = Modifier.weight(1f).aspectRatio(1f).border(1.dp, Color.Black).background(color = color7))
-            }
-            Box(modifier = Modifier.weight(1f).aspectRatio(1f).border(1.dp, Color.Black).background(color = color9))
-            repeat(3){
-                Box(modifier = Modifier.weight(1f).aspectRatio(1f).border(1.dp, Color.Black).background(color = color7))
-            }
-            Box(modifier = Modifier.weight(1f).aspectRatio(1f).border(1.dp, Color.Black).background(color = color12))
-            repeat(2){
-                Box(modifier = Modifier.weight(1f).aspectRatio(1f).border(1.dp, Color.Black).background(color = black))
-            }
-            repeat(6){
+            repeat(9) {
                 Box(modifier = Modifier.weight(1f).aspectRatio(1f).border(1.dp, Color.Black))
             }
         }
-        Row(modifier=Modifier){
-            repeat(11){
+        Row(modifier = Modifier) {
+            repeat(14) {
                 Box(modifier = Modifier.weight(1f).aspectRatio(1f).border(1.dp, Color.Black))
             }
-            repeat(2){
-                Box(modifier = Modifier.weight(1f).aspectRatio(1f).border(1.dp, Color.Black).background(color = black))
+            repeat(2) {
+                Box(
+                    modifier = Modifier.weight(1f).aspectRatio(1f).border(1.dp, Color.Black)
+                        .background(color = color2)
+                )
             }
-            Box(modifier = Modifier.weight(1f).aspectRatio(1f).border(1.dp, Color.Black).background(color = color14))
-            Box(modifier = Modifier.weight(1f).aspectRatio(1f).border(1.dp, Color.Black).background(color = color7))
-            Box(modifier = Modifier.weight(1f).aspectRatio(1f).border(1.dp, Color.Black).background(color = color13))
-            Box(modifier = Modifier.weight(1f).aspectRatio(1f).border(1.dp, Color.Black).background(color = color1))
-            Box(modifier = Modifier.weight(1f).aspectRatio(1f).border(1.dp, Color.Black).background(color = black))
-            Box(modifier = Modifier.weight(1f).aspectRatio(1f).border(1.dp, Color.Black).background(color = color2))
-            Box(modifier = Modifier.weight(1f).aspectRatio(1f).border(1.dp, Color.Black).background(color = color12))
-            repeat(2){
-                Box(modifier = Modifier.weight(1f).aspectRatio(1f).border(1.dp, Color.Black).background(color = color7))
+            repeat(7) {
+                Box(
+                    modifier = Modifier.weight(1f).aspectRatio(1f).border(1.dp, Color.Black)
+                        .background(color = color7)
+                )
             }
-            Box(modifier = Modifier.weight(1f).aspectRatio(1f).border(1.dp, Color.Black).background(color = color9))
-            repeat(2){
-                Box(modifier = Modifier.weight(1f).aspectRatio(1f).border(1.dp, Color.Black).background(color = color7))
+            Box(
+                modifier = Modifier.weight(1f).aspectRatio(1f).border(1.dp, Color.Black)
+                    .background(color = color13)
+            )
+            Box(
+                modifier = Modifier.weight(1f).aspectRatio(1f).border(1.dp, Color.Black)
+                    .background(color = black)
+            )
+            Box(
+                modifier = Modifier.weight(1f).aspectRatio(1f).border(1.dp, Color.Black)
+                    .background(color = color12)
+            )
+            Box(
+                modifier = Modifier.weight(1f).aspectRatio(1f).border(1.dp, Color.Black)
+                    .background(color = color7)
+            )
+            Box(
+                modifier = Modifier.weight(1f).aspectRatio(1f).border(1.dp, Color.Black)
+                    .background(color = color9)
+            )
+            Box(
+                modifier = Modifier.weight(1f).aspectRatio(1f).border(1.dp, Color.Black)
+                    .background(color = color1)
+            )
+            Box(
+                modifier = Modifier.weight(1f).aspectRatio(1f).border(1.dp, Color.Black)
+                    .background(color = black)
+            )
+            Box(
+                modifier = Modifier.weight(1f).aspectRatio(1f).border(1.dp, Color.Black)
+                    .background(color = color12)
+            )
+            Box(
+                modifier = Modifier.weight(1f).aspectRatio(1f).border(1.dp, Color.Black)
+                    .background(color = color7)
+            )
+            Box(
+                modifier = Modifier.weight(1f).aspectRatio(1f).border(1.dp, Color.Black)
+                    .background(color = color12)
+            )
+            Box(
+                modifier = Modifier.weight(1f).aspectRatio(1f).border(1.dp, Color.Black)
+                    .background(color = color7)
+            )
+            Box(
+                modifier = Modifier.weight(1f).aspectRatio(1f).border(1.dp, Color.Black)
+                    .background(color = color12)
+            )
+            Box(
+                modifier = Modifier.weight(1f).aspectRatio(1f).border(1.dp, Color.Black)
+                    .background(color = color7)
+            )
+            Box(
+                modifier = Modifier.weight(1f).aspectRatio(1f).border(1.dp, Color.Black)
+                    .background(color = color12)
+            )
+            Box(
+                modifier = Modifier.weight(1f).aspectRatio(1f).border(1.dp, Color.Black)
+                    .background(color = black)
+            )
+            Box(
+                modifier = Modifier.weight(1f).aspectRatio(1f).border(1.dp, Color.Black)
+                    .background(color = color2)
+            )
+            repeat(2) {
+                Box(
+                    modifier = Modifier.weight(1f).aspectRatio(1f).border(1.dp, Color.Black)
+                        .background(color = color7)
+                )
             }
-            Box(modifier = Modifier.weight(1f).aspectRatio(1f).border(1.dp, Color.Black).background(color = color1))
-            repeat(5){
-                Box(modifier = Modifier.weight(1f).aspectRatio(1f).border(1.dp, Color.Black).background(color = black))
+            Box(
+                modifier = Modifier.weight(1f).aspectRatio(1f).border(1.dp, Color.Black)
+                    .background(color = color9)
+            )
+            repeat(3) {
+                Box(
+                    modifier = Modifier.weight(1f).aspectRatio(1f).border(1.dp, Color.Black)
+                        .background(color = color7)
+                )
             }
-            Box(modifier = Modifier.weight(1f).aspectRatio(1f).border(1.dp, Color.Black).background(color = color1))
-            Box(modifier = Modifier.weight(1f).aspectRatio(1f).border(1.dp, Color.Black).background(color = color7))
-            repeat(3){
-                Box(modifier = Modifier.weight(1f).aspectRatio(1f).border(1.dp, Color.Black).background(color = color9))
+            Box(
+                modifier = Modifier.weight(1f).aspectRatio(1f).border(1.dp, Color.Black)
+                    .background(color = color9)
+            )
+            repeat(4) {
+                Box(
+                    modifier = Modifier.weight(1f).aspectRatio(1f).border(1.dp, Color.Black)
+                        .background(color = color7)
+                )
             }
-            repeat(2){
-                Box(modifier = Modifier.weight(1f).aspectRatio(1f).border(1.dp, Color.Black).background(color = color7))
+            repeat(2) {
+                Box(
+                    modifier = Modifier.weight(1f).aspectRatio(1f).border(1.dp, Color.Black)
+                        .background(color = black)
+                )
             }
-            Box(modifier = Modifier.weight(1f).aspectRatio(1f).border(1.dp, Color.Black).background(color = color9))
-            repeat(3){
-                Box(modifier = Modifier.weight(1f).aspectRatio(1f).border(1.dp, Color.Black).background(color = color7))
-            }
-            Box(modifier = Modifier.weight(1f).aspectRatio(1f).border(1.dp, Color.Black).background(color = color12))
-            repeat(2){
-                Box(modifier = Modifier.weight(1f).aspectRatio(1f).border(1.dp, Color.Black).background(color = black))
-            }
-            repeat(5){
+            repeat(8) {
                 Box(modifier = Modifier.weight(1f).aspectRatio(1f).border(1.dp, Color.Black))
             }
         }
-        Row(modifier=Modifier){
-            repeat(10){
+        Row(modifier = Modifier) {
+            repeat(14) {
+                Box(modifier = Modifier.weight(1f).aspectRatio(1f).border(1.dp, Color.Black))
+            }
+            Box(
+                modifier = Modifier.weight(1f).aspectRatio(1f).border(1.dp, Color.Black)
+                    .background(color = black)
+            )
+            Box(
+                modifier = Modifier.weight(1f).aspectRatio(1f).border(1.dp, Color.Black)
+                    .background(color = color8)
+            )
+            repeat(11) {
+                Box(
+                    modifier = Modifier.weight(1f).aspectRatio(1f).border(1.dp, Color.Black)
+                        .background(color = black)
+                )
+            }
+            Box(
+                modifier = Modifier.weight(1f).aspectRatio(1f).border(1.dp, Color.Black)
+                    .background(color = color2)
+            )
+            Box(
+                modifier = Modifier.weight(1f).aspectRatio(1f).border(1.dp, Color.Black)
+                    .background(color = black)
+            )
+            Box(
+                modifier = Modifier.weight(1f).aspectRatio(1f).border(1.dp, Color.Black)
+                    .background(color = color1)
+            )
+            repeat(8) {
+                Box(
+                    modifier = Modifier.weight(1f).aspectRatio(1f).border(1.dp, Color.Black)
+                        .background(color = color7)
+                )
+            }
+            Box(
+                modifier = Modifier.weight(1f).aspectRatio(1f).border(1.dp, Color.Black)
+                    .background(color = black)
+            )
+            repeat(2) {
+                Box(
+                    modifier = Modifier.weight(1f).aspectRatio(1f).border(1.dp, Color.Black)
+                        .background(color = color7)
+                )
+            }
+            Box(
+                modifier = Modifier.weight(1f).aspectRatio(1f).border(1.dp, Color.Black)
+                    .background(color = color9)
+            )
+            repeat(2) {
+                Box(
+                    modifier = Modifier.weight(1f).aspectRatio(1f).border(1.dp, Color.Black)
+                        .background(color = color7)
+                )
+            }
+            Box(
+                modifier = Modifier.weight(1f).aspectRatio(1f).border(1.dp, Color.Black)
+                    .background(color = color9)
+            )
+            repeat(3) {
+                Box(
+                    modifier = Modifier.weight(1f).aspectRatio(1f).border(1.dp, Color.Black)
+                        .background(color = color7)
+                )
+            }
+            Box(
+                modifier = Modifier.weight(1f).aspectRatio(1f).border(1.dp, Color.Black)
+                    .background(color = color9)
+            )
+            Box(
+                modifier = Modifier.weight(1f).aspectRatio(1f).border(1.dp, Color.Black)
+                    .background(color = color7)
+            )
+            Box(
+                modifier = Modifier.weight(1f).aspectRatio(1f).border(1.dp, Color.Black)
+                    .background(color = color10)
+            )
+            repeat(2) {
+                Box(
+                    modifier = Modifier.weight(1f).aspectRatio(1f).border(1.dp, Color.Black)
+                        .background(color = black)
+                )
+            }
+            repeat(7) {
+                Box(modifier = Modifier.weight(1f).aspectRatio(1f).border(1.dp, Color.Black))
+            }
+        }
+        Row(modifier = Modifier) {
+            repeat(14) {
+                Box(modifier = Modifier.weight(1f).aspectRatio(1f).border(1.dp, Color.Black))
+            }
+            Box(
+                modifier = Modifier.weight(1f).aspectRatio(1f).border(1.dp, Color.Black)
+                    .background(color = black)
+            )
+            Box(
+                modifier = Modifier.weight(1f).aspectRatio(1f).border(1.dp, Color.Black)
+                    .background(color = color7)
+            )
+            Box(
+                modifier = Modifier.weight(1f).aspectRatio(1f).border(1.dp, Color.Black)
+                    .background(Color.White)
+            )
+            repeat(2) {
+                Box(
+                    modifier = Modifier.weight(1f).aspectRatio(1f).border(1.dp, Color.Black)
+                        .background(color = black)
+                )
+            }
+            repeat(5) {
+                Box(
+                    modifier = Modifier.weight(1f).aspectRatio(1f).border(1.dp, Color.Black)
+                        .background(Color.White)
+                )
+
+            }
+            Box(
+                modifier = Modifier.weight(1f).aspectRatio(1f).border(1.dp, Color.Black)
+                    .background(color = black)
+            )
+            Box(
+                modifier = Modifier.weight(1f).aspectRatio(1f).border(1.dp, Color.Black)
+                    .background(color = color12)
+            )
+            Box(
+                modifier = Modifier.weight(1f).aspectRatio(1f).border(1.dp, Color.Black)
+                    .background(color = color7)
+            )
+            Box(
+                modifier = Modifier.weight(1f).aspectRatio(1f).border(1.dp, Color.Black)
+                    .background(color = color1)
+            )
+            Box(
+                modifier = Modifier.weight(1f).aspectRatio(1f).border(1.dp, Color.Black)
+                    .background(color = black)
+            )
+            Box(
+                modifier = Modifier.weight(1f).aspectRatio(1f).border(1.dp, Color.Black)
+                    .background(color = color2)
+            )
+            Box(
+                modifier = Modifier.weight(1f).aspectRatio(1f).border(1.dp, Color.Black)
+                    .background(color = color1)
+            )
+            Box(
+                modifier = Modifier.weight(1f).aspectRatio(1f).border(1.dp, Color.Black)
+                    .background(color = color16)
+            )
+            Box(
+                modifier = Modifier.weight(1f).aspectRatio(1f).border(1.dp, Color.Black)
+                    .background(color = color2)
+            )
+            repeat(2) {
+                Box(
+                    modifier = Modifier.weight(1f).aspectRatio(1f).border(1.dp, Color.Black)
+                        .background(color = black)
+                )
+            }
+            Box(
+                modifier = Modifier.weight(1f).aspectRatio(1f).border(1.dp, Color.Black)
+                    .background(color = color2)
+            )
+            repeat(2) {
+                Box(
+                    modifier = Modifier.weight(1f).aspectRatio(1f).border(1.dp, Color.Black)
+                        .background(color = color7)
+                )
+            }
+            Box(
+                modifier = Modifier.weight(1f).aspectRatio(1f).border(1.dp, Color.Black)
+                    .background(color = black)
+            )
+            repeat(3) {
+                Box(
+                    modifier = Modifier.weight(1f).aspectRatio(1f).border(1.dp, Color.Black)
+                        .background(color = color7)
+                )
+            }
+            Box(
+                modifier = Modifier.weight(1f).aspectRatio(1f).border(1.dp, Color.Black)
+                    .background(color = color14)
+            )
+            repeat(2) {
+                Box(
+                    modifier = Modifier.weight(1f).aspectRatio(1f).border(1.dp, Color.Black)
+                        .background(color = color6)
+                )
+            }
+            repeat(8) {
+                Box(
+                    modifier = Modifier.weight(1f).aspectRatio(1f).border(1.dp, Color.Black)
+                        .background(color = black)
+                )
+            }
+            Box(
+                modifier = Modifier.weight(1f).aspectRatio(1f).border(1.dp, Color.Black)
+                    .background(color = color2)
+            )
+            repeat(6) {
                 Box(modifier = Modifier.weight(1f).aspectRatio(1f).border(1.dp, Color.Black))
             }
         }
     }
-    }
+}
+
 
 
 
