@@ -318,6 +318,28 @@ fun miprimerpixel_art(modifier: Modifier= Modifier.fillMaxHeight()) {
             Box(modifier = Modifier.weight(1f).aspectRatio(1f).border(1.dp, Color.Black).background(color = color13))
             Box(modifier = Modifier.weight(1f).aspectRatio(1f).border(1.dp, Color.Black).background(color = color12))
             Box(modifier = Modifier.weight(1f).aspectRatio(1f).border(1.dp, Color.Black).background(color = color7))
+            Box(modifier = Modifier.weight(1f).aspectRatio(1f).border(1.dp, Color.Black).background(color = color13))
+            Box(modifier = Modifier.weight(1f).aspectRatio(1f).border(1.dp, Color.Black).background(color = color7))
+            Box(modifier = Modifier.weight(1f).aspectRatio(1f).border(1.dp, Color.Black).background(color = color9))
+            repeat(3){
+                Box(modifier = Modifier.weight(1f).aspectRatio(1f).border(1.dp, Color.Black).background(color = color7))
+            }
+            Box(modifier = Modifier.weight(1f).aspectRatio(1f).border(1.dp, Color.Black).background(color = color9))
+            repeat(3){
+                Box(modifier = Modifier.weight(1f).aspectRatio(1f).border(1.dp, Color.Black).background(color = color7))
+            }
+            Box(modifier = Modifier.weight(1f).aspectRatio(1f).border(1.dp, Color.Black).background(color = color12))
+            repeat(2){
+                Box(modifier = Modifier.weight(1f).aspectRatio(1f).border(1.dp, Color.Black).background(color = black))
+            }
+            repeat(6){
+                Box(modifier = Modifier.weight(1f).aspectRatio(1f).border(1.dp, Color.Black))
+            }
+        }
+        Row(modifier=Modifier){
+            repeat(11){
+                Box(modifier = Modifier.weight(1f).aspectRatio(1f).border(1.dp, Color.Black))
+            }
         }
     }
     }
