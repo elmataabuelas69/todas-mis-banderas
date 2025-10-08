@@ -28,3 +28,4 @@ val color11=Color(0xFFAAAAB6)
 val color12=Color(0xFFF4BFC0)
 
 val color13=Color(0xFFF2C0D5)
+val color14=Color(0xFFCAA58B)

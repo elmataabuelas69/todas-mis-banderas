@@ -22,6 +22,7 @@ import com.example.allflagsofcountriesworld.ui.theme.color10
 import com.example.allflagsofcountriesworld.ui.theme.color11
 import com.example.allflagsofcountriesworld.ui.theme.color12
 import com.example.allflagsofcountriesworld.ui.theme.color13
+import com.example.allflagsofcountriesworld.ui.theme.color14
 import com.example.allflagsofcountriesworld.ui.theme.color2
 import com.example.allflagsofcountriesworld.ui.theme.color3
 import com.example.allflagsofcountriesworld.ui.theme.color4
@@ -338,6 +339,51 @@ fun miprimerpixel_art(modifier: Modifier= Modifier.fillMaxHeight()) {
         }
         Row(modifier=Modifier){
             repeat(11){
+                Box(modifier = Modifier.weight(1f).aspectRatio(1f).border(1.dp, Color.Black))
+            }
+            repeat(2){
+                Box(modifier = Modifier.weight(1f).aspectRatio(1f).border(1.dp, Color.Black).background(color = black))
+            }
+            Box(modifier = Modifier.weight(1f).aspectRatio(1f).border(1.dp, Color.Black).background(color = color14))
+            Box(modifier = Modifier.weight(1f).aspectRatio(1f).border(1.dp, Color.Black).background(color = color7))
+            Box(modifier = Modifier.weight(1f).aspectRatio(1f).border(1.dp, Color.Black).background(color = color13))
+            Box(modifier = Modifier.weight(1f).aspectRatio(1f).border(1.dp, Color.Black).background(color = color1))
+            Box(modifier = Modifier.weight(1f).aspectRatio(1f).border(1.dp, Color.Black).background(color = black))
+            Box(modifier = Modifier.weight(1f).aspectRatio(1f).border(1.dp, Color.Black).background(color = color2))
+            Box(modifier = Modifier.weight(1f).aspectRatio(1f).border(1.dp, Color.Black).background(color = color12))
+            repeat(2){
+                Box(modifier = Modifier.weight(1f).aspectRatio(1f).border(1.dp, Color.Black).background(color = color7))
+            }
+            Box(modifier = Modifier.weight(1f).aspectRatio(1f).border(1.dp, Color.Black).background(color = color9))
+            repeat(2){
+                Box(modifier = Modifier.weight(1f).aspectRatio(1f).border(1.dp, Color.Black).background(color = color7))
+            }
+            Box(modifier = Modifier.weight(1f).aspectRatio(1f).border(1.dp, Color.Black).background(color = color1))
+            repeat(5){
+                Box(modifier = Modifier.weight(1f).aspectRatio(1f).border(1.dp, Color.Black).background(color = black))
+            }
+            Box(modifier = Modifier.weight(1f).aspectRatio(1f).border(1.dp, Color.Black).background(color = color1))
+            Box(modifier = Modifier.weight(1f).aspectRatio(1f).border(1.dp, Color.Black).background(color = color7))
+            repeat(3){
+                Box(modifier = Modifier.weight(1f).aspectRatio(1f).border(1.dp, Color.Black).background(color = color9))
+            }
+            repeat(2){
+                Box(modifier = Modifier.weight(1f).aspectRatio(1f).border(1.dp, Color.Black).background(color = color7))
+            }
+            Box(modifier = Modifier.weight(1f).aspectRatio(1f).border(1.dp, Color.Black).background(color = color9))
+            repeat(3){
+                Box(modifier = Modifier.weight(1f).aspectRatio(1f).border(1.dp, Color.Black).background(color = color7))
+            }
+            Box(modifier = Modifier.weight(1f).aspectRatio(1f).border(1.dp, Color.Black).background(color = color12))
+            repeat(2){
+                Box(modifier = Modifier.weight(1f).aspectRatio(1f).border(1.dp, Color.Black).background(color = black))
+            }
+            repeat(5){
+                Box(modifier = Modifier.weight(1f).aspectRatio(1f).border(1.dp, Color.Black))
+            }
+        }
+        Row(modifier=Modifier){
+            repeat(10){
                 Box(modifier = Modifier.weight(1f).aspectRatio(1f).border(1.dp, Color.Black))
             }
         }
