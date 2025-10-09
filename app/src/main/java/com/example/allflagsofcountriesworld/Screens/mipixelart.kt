@@ -558,6 +558,86 @@ fun mipixel_art(modifier: Modifier= Modifier.fillMaxHeight()) {
             )
 
         }
+        Row(modifier = Modifier) {
+
+            repeat(6) {
+                Box(
+                    modifier = Modifier
+                        .weight(1f)
+                        .aspectRatio(1f)
+                        .border(1.dp, Color.Black)
+                )
+
+            }
+            repeat(2) {
+                Box(
+                    modifier = Modifier
+                        .weight(1f)
+                        .aspectRatio(1f)
+                        .border(1.dp, Color.Black)
+                        .background(color = black)
+                )
+            }
+            Box(
+                modifier = Modifier
+                    .weight(1f)
+                    .aspectRatio(1f)
+                    .border(1.dp, Color.Black)
+                    .background(Color.White)
+            )
+            repeat(4) {
+                Box(
+                    modifier = Modifier
+                        .weight(1f)
+                        .aspectRatio(1f)
+                        .border(1.dp, Color.Black)
+                        .background(color = color18)
+                )
+            }
+                Box(
+                    modifier = Modifier
+                        .weight(1f)
+                        .aspectRatio(1f)
+                        .border(1.dp, Color.Black)
+                        .background(color = color17)
+                )
+            repeat(3) {
+                Box(
+                    modifier = Modifier
+                        .weight(1f)
+                        .aspectRatio(1f)
+                        .border(1.dp, Color.Black)
+                        .background(color = color19)
+                )
+            }
+            Box(
+                modifier = Modifier
+                    .weight(1f)
+                    .aspectRatio(1f)
+                    .border(1.dp, Color.Black)
+                    .background(color = color17)
+            )
+
+            Box(
+                modifier = Modifier
+                    .weight(1f)
+                    .aspectRatio(1f)
+                    .border(1.dp, Color.Black)
+                    .background(color=black)
+
+            )
+            Box(
+                modifier = Modifier
+                    .weight(1f)
+                    .aspectRatio(1f)
+                    .border(1.dp, Color.Black)
+
+            )
+
+        }
+        Row(modifier=Modifier){
+
+        }
 
     }
 
