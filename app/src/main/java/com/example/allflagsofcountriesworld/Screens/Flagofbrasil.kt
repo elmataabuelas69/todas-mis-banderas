@@ -11,6 +11,8 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.foundation.Canvas
+import androidx.compose.ui.Alignment
+import androidx.compose.ui.geometry.Offset
 import androidx.compose.ui.graphics.Path
 import androidx.compose.ui.graphics.drawscope.Fill
 import androidx.compose.ui.graphics.drawscope.Stroke
@@ -19,7 +21,7 @@ import androidx.compose.ui.graphics.drawscope.Stroke
 fun brasil(modifier: Modifier =Modifier){
     Column(modifier= Modifier) {
 
-        Canvas(modifier = modifier.fillMaxSize()) {
+        Canvas(modifier = modifier.fillMaxSize(), ) {
             val centerX = size.width / 2
             val centerY = size.height / 2
             val halfWidth = size.width / 2
@@ -38,7 +40,13 @@ fun brasil(modifier: Modifier =Modifier){
                 color = Color.Yellow,
                 style = Fill
             )
-        }
+                drawCircle(
+                    color = Color.Blue,
+                    radius = size.minDimension / 3,
+                    center = Offset(size.width / 3, size.height / 3),
+
+                )
+            }
 
 
     }
