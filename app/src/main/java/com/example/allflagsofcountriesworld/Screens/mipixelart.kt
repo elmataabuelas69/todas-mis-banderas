@@ -17,10 +17,23 @@ import com.example.allflagsofcountriesworld.ui.theme.black
 import com.example.allflagsofcountriesworld.ui.theme.color17
 import com.example.allflagsofcountriesworld.ui.theme.color18
 import com.example.allflagsofcountriesworld.ui.theme.color19
+import com.example.allflagsofcountriesworld.ui.theme.color20
 
 @Composable
 fun mipixel_art(modifier: Modifier= Modifier.fillMaxHeight()) {
     Column(modifier = Modifier) {
+
+        Row(modifier=Modifier){
+            repeat(20) {
+                Box(
+                    modifier = Modifier
+                        .weight(1f)
+                        .aspectRatio(1f)
+                        .border(1.dp, Color.Black)
+                )
+
+            }
+        }
         Row(modifier = Modifier) {
 
             repeat(9) {
@@ -636,9 +649,656 @@ fun mipixel_art(modifier: Modifier= Modifier.fillMaxHeight()) {
 
         }
         Row(modifier=Modifier){
+         repeat(5){
+             Box(
+                 modifier = Modifier
+                     .weight(1f)
+                     .aspectRatio(1f)
+                     .border(1.dp, Color.Black)
+             )
+         }
+            Box(
+                modifier = Modifier
+                    .weight(1f)
+                    .aspectRatio(1f)
+                    .border(1.dp, Color.Black)
+                    .background(color = black)
+            )
+            repeat(3){
+                Box(
+                    modifier = Modifier
+                        .weight(1f)
+                        .aspectRatio(1f)
+                        .border(1.dp, Color.Black)
+                        .background(color = color18)
+                )
+            }
+            Box(
+                modifier = Modifier
+                    .weight(1f)
+                    .aspectRatio(1f)
+                    .border(1.dp, Color.Black)
+                    .background(Color.White)
+            )
+            repeat(4){
+                Box(
+                    modifier = Modifier
+                        .weight(1f)
+                        .aspectRatio(1f)
+                        .border(1.dp, Color.Black)
+                        .background(color = color18)
+                )
+            }
+            repeat(3){
+                Box(
+                    modifier = Modifier
+                        .weight(1f)
+                        .aspectRatio(1f)
+                        .border(1.dp, Color.Black)
+                        .background(color = color17)
+                )
+            }
+            Box(
+                modifier = Modifier
+                    .weight(1f)
+                    .aspectRatio(1f)
+                    .border(1.dp, Color.Black)
+                    .background(color = black)
+            )
+            repeat(2){
+                Box(
+                    modifier = Modifier
+                        .weight(1f)
+                        .aspectRatio(1f)
+                        .border(1.dp, Color.Black)
+                )
+            }
 
         }
+        Row(modifier=Modifier){
+            repeat(4){
+                Box(
+                    modifier = Modifier
+                        .weight(1f)
+                        .aspectRatio(1f)
+                        .border(1.dp, Color.Black)
+                )
+            }
+            Box(
+                modifier = Modifier
+                    .weight(1f)
+                    .aspectRatio(1f)
+                    .border(1.dp, Color.Black)
+                    .background(color = black)
+            )
+            repeat(5){
+                Box(
+                    modifier = Modifier
+                        .weight(1f)
+                        .aspectRatio(1f)
+                        .border(1.dp, Color.Black)
+                        .background(color = color18)
+                )
+            }
+            Box(
+                modifier = Modifier
+                    .weight(1f)
+                    .aspectRatio(1f)
+                    .border(1.dp, Color.Black)
+                    .background(Color.White)
+            )
+            Box(
+                modifier = Modifier
+                    .weight(1f)
+                    .aspectRatio(1f)
+                    .border(1.dp, Color.Black)
+                    .background(color = color18)
+            )
+            repeat(2){
+                Box(
+                    modifier = Modifier
+                        .weight(1f)
+                        .aspectRatio(1f)
+                        .border(1.dp, Color.Black)
+                        .background(color = black)
+                )
+            }
+            Box(
+                modifier = Modifier
+                    .weight(1f)
+                    .aspectRatio(1f)
+                    .border(1.dp, Color.Black)
+                    .background(color = color17)
+            )
+            repeat(2){
+                Box(
+                    modifier = Modifier
+                        .weight(1f)
+                        .aspectRatio(1f)
+                        .border(1.dp, Color.Black)
+                        .background(color = black)
+                )
+            }
+            repeat(3){
+                Box(
+                    modifier = Modifier
+                        .weight(1f)
+                        .aspectRatio(1f)
+                        .border(1.dp, Color.Black)
+                )
+            }
 
+        }
+        Row(modifier=Modifier){
+                Box(
+                    modifier = Modifier
+                        .weight(1f)
+                        .aspectRatio(1f)
+                        .border(1.dp, Color.Black)
+                )
+            repeat(3) {
+                Box(
+                    modifier = Modifier
+                        .weight(1f)
+                        .aspectRatio(1f)
+                        .border(1.dp, Color.Black)
+                        .background(color = black)
+                )
+            }
+            repeat(7){
+                Box(
+                    modifier = Modifier
+                        .weight(1f)
+                        .aspectRatio(1f)
+                        .border(1.dp, Color.Black)
+                        .background(color = color18)
+                )
+            }
+            Box(
+                modifier = Modifier
+                    .weight(1f)
+                    .aspectRatio(1f)
+                    .border(1.dp, Color.Black)
+                    .background(Color.White)
+            )
+            repeat(2){
+                Box(
+                    modifier = Modifier
+                        .weight(1f)
+                        .aspectRatio(1f)
+                        .border(1.dp, Color.Black)
+                        .background(color = black)
+                )
+            }
+            Box(
+                modifier = Modifier
+                    .weight(1f)
+                    .aspectRatio(1f)
+                    .border(1.dp, Color.Black)
+                    .background(color = black)
+            )
+            repeat(2){
+                Box(
+                    modifier = Modifier
+                        .weight(1f)
+                        .aspectRatio(1f)
+                        .border(1.dp, Color.Black)
+                        .background(color = black)
+                )
+            }
+            Box(
+                modifier = Modifier
+                    .weight(1f)
+                    .aspectRatio(1f)
+                    .border(1.dp, Color.Black)
+                    .background(color = color17)
+            )
+            Box(
+                modifier = Modifier
+                    .weight(1f)
+                    .aspectRatio(1f)
+                    .border(1.dp, Color.Black)
+                    .background(color = black)
+            )
+                Box(
+                    modifier = Modifier
+                        .weight(1f)
+                        .aspectRatio(1f)
+                        .border(1.dp, Color.Black)
+                )
+        }
+        Row(modifier=Modifier){
+            Box(
+                modifier = Modifier
+                    .weight(1f)
+                    .aspectRatio(1f)
+                    .border(1.dp, Color.Black)
+                    .background(color = black)
+            )
+            Box(
+                modifier = Modifier
+                    .weight(1f)
+                    .aspectRatio(1f)
+                    .border(1.dp, Color.Black)
+                    .background(color = color20)
+            )
+            repeat(2){
+                Box(
+                    modifier = Modifier
+                        .weight(1f)
+                        .aspectRatio(1f)
+                        .border(1.dp, Color.Black)
+                        .background(color =color17)
+                )
+            }
+            repeat(5){
+                Box(
+                    modifier = Modifier
+                        .weight(1f)
+                        .aspectRatio(1f)
+                        .border(1.dp, Color.Black)
+                        .background(color = color18)
+                )
+            }
+            Box(
+                modifier = Modifier
+                    .weight(1f)
+                    .aspectRatio(1f)
+                    .border(1.dp, Color.Black)
+                    .background(color = color17)
+            )
+            repeat(2){
+                Box(
+                    modifier = Modifier
+                        .weight(1f)
+                        .aspectRatio(1f)
+                        .border(1.dp, Color.Black)
+                        .background(color = color18)
+                )
+            }
+            repeat(2){
+                Box(
+                    modifier = Modifier
+                        .weight(1f)
+                        .aspectRatio(1f)
+                        .border(1.dp, Color.Black)
+                        .background(color = black)
+                )
+            }
+            Box(
+                modifier = Modifier
+                    .weight(1f)
+                    .aspectRatio(1f)
+                    .border(1.dp, Color.Black)
+                    .background(color = color17)
+            )
+            repeat(2){
+                Box(
+                    modifier = Modifier
+                        .weight(1f)
+                        .aspectRatio(1f)
+                        .border(1.dp, Color.Black)
+                        .background(color = black)
+                )
+            }
+                Box(
+                    modifier = Modifier
+                        .weight(1f)
+                        .aspectRatio(1f)
+                        .border(1.dp, Color.Black)
+                        .background(color = color17)
+                )
+            Box(
+                modifier = Modifier
+                    .weight(1f)
+                    .aspectRatio(1f)
+                    .border(1.dp, Color.Black)
+                    .background(color = black)
+            )
+            Box(
+                modifier = Modifier
+                    .weight(1f)
+                    .aspectRatio(1f)
+                    .border(1.dp, Color.Black)
+            )
+        }
+        Row(modifier=Modifier){
+            Box(
+                modifier = Modifier
+                    .weight(1f)
+                    .aspectRatio(1f)
+                    .border(1.dp, Color.Black)
+                    .background(color = black)
+            )
+            repeat(2){
+                Box(
+                    modifier = Modifier
+                        .weight(1f)
+                        .aspectRatio(1f)
+                        .border(1.dp, Color.Black)
+                        .background(color = color17)
+                )
+            }
+            Box(
+                modifier = Modifier
+                    .weight(1f)
+                    .aspectRatio(1f)
+                    .border(1.dp, Color.Black)
+                    .background(color = color18)
+            )
+            repeat(2){
+                Box(
+                    modifier = Modifier
+                        .weight(1f)
+                        .aspectRatio(1f)
+                        .border(1.dp, Color.Black)
+                        .background(color = black)
+                )
+            }
+            repeat(2){
+                Box(
+                    modifier = Modifier
+                        .weight(1f)
+                        .aspectRatio(1f)
+                        .border(1.dp, Color.Black)
+                        .background(color = color18)
+                )
+            }
+            Box(
+                modifier = Modifier
+                    .weight(1f)
+                    .aspectRatio(1f)
+                    .border(1.dp, Color.Black)
+                    .background(color = color20)
+            )
+            repeat(3){
+                Box(
+                    modifier = Modifier
+                        .weight(1f)
+                        .aspectRatio(1f)
+                        .border(1.dp, Color.Black)
+                        .background(color = color18)
+                )
+            }
+            repeat(6){
+                Box(
+                    modifier = Modifier
+                        .weight(1f)
+                        .aspectRatio(1f)
+                        .border(1.dp, Color.Black)
+                        .background(color = color17)
+                )
+            }
+            Box(
+                modifier = Modifier
+                    .weight(1f)
+                    .aspectRatio(1f)
+                    .border(1.dp, Color.Black)
+                    .background(color = black)
+            )
+            Box(
+                modifier = Modifier
+                    .weight(1f)
+                    .aspectRatio(1f)
+                    .border(1.dp, Color.Black)
+            )
+        }
+        Row(modifier=Modifier){
+            Box(
+                modifier = Modifier
+                    .weight(1f)
+                    .aspectRatio(1f)
+                    .border(1.dp, Color.Black)
+
+            )
+            Box(
+                modifier = Modifier
+                    .weight(1f)
+                    .aspectRatio(1f)
+                    .border(1.dp, Color.Black)
+                    .background(color = black)
+            )
+            repeat(4){
+                Box(
+                    modifier = Modifier
+                        .weight(1f)
+                        .aspectRatio(1f)
+                        .border(1.dp, Color.Black)
+                        .background(color = color18)
+                )
+            }
+            repeat(2){
+                Box(
+                    modifier = Modifier
+                        .weight(1f)
+                        .aspectRatio(1f)
+                        .border(1.dp, Color.Black)
+                        .background(color = black)
+                )
+            }
+            repeat(3){
+                Box(
+                    modifier = Modifier
+                        .weight(1f)
+                        .aspectRatio(1f)
+                        .border(1.dp, Color.Black)
+                        .background(color = color18)
+                )
+            }
+            repeat(7){
+                Box(
+                    modifier = Modifier
+                        .weight(1f)
+                        .aspectRatio(1f)
+                        .border(1.dp, Color.Black)
+                        .background(color = color17)
+                )
+            }
+            Box(
+                modifier = Modifier
+                    .weight(1f)
+                    .aspectRatio(1f)
+                    .border(1.dp, Color.Black)
+                    .background(color = black)
+            )
+            Box(
+                modifier = Modifier
+                    .weight(1f)
+                    .aspectRatio(1f)
+                    .border(1.dp, Color.Black)
+            )
+        }
+        Row(modifier=Modifier){
+            repeat(2){
+                Box(
+                    modifier = Modifier
+                        .weight(1f)
+                        .aspectRatio(1f)
+                        .border(1.dp, Color.Black)
+                )
+            }
+            Box(
+                modifier = Modifier
+                    .weight(1f)
+                    .aspectRatio(1f)
+                    .border(1.dp, Color.Black)
+                    .background(color = black)
+            )
+            repeat(6){
+                Box(
+                    modifier = Modifier
+                        .weight(1f)
+                        .aspectRatio(1f)
+                        .border(1.dp, Color.Black)
+                        .background(color = color18)
+                )
+            }
+            repeat(7){
+                Box(
+                    modifier = Modifier
+                        .weight(1f)
+                        .aspectRatio(1f)
+                        .border(1.dp, Color.Black)
+                        .background(color = color17)
+                )
+            }
+            Box(
+                modifier = Modifier
+                    .weight(1f)
+                    .aspectRatio(1f)
+                    .border(1.dp, Color.Black)
+                    .background(color = color20)
+            )
+            Box(
+                modifier = Modifier
+                    .weight(1f)
+                    .aspectRatio(1f)
+                    .border(1.dp, Color.Black)
+                    .background(color = black)
+            )
+            repeat(2){
+                Box(
+                    modifier = Modifier
+                        .weight(1f)
+                        .aspectRatio(1f)
+                        .border(1.dp, Color.Black)
+                )
+            }
+        }
+        Row(modifier=Modifier){
+            repeat(3){
+                Box(
+                    modifier = Modifier
+                        .weight(1f)
+                        .aspectRatio(1f)
+                        .border(1.dp, Color.Black)
+                )
+            }
+            repeat(3){
+                Box(
+                    modifier = Modifier
+                        .weight(1f)
+                        .aspectRatio(1f)
+                        .border(1.dp, Color.Black)
+                        .background(color = black)
+                )
+            }
+            repeat(2){
+                Box(
+                    modifier = Modifier
+                        .weight(1f)
+                        .aspectRatio(1f)
+                        .border(1.dp, Color.Black)
+                        .background(color = color18)
+                )
+            }
+            repeat(5){
+                Box(
+                    modifier = Modifier
+                        .weight(1f)
+                        .aspectRatio(1f)
+                        .border(1.dp, Color.Black)
+                        .background(color = color17)
+                )
+            }
+            repeat(2){
+                Box(
+                    modifier = Modifier
+                        .weight(1f)
+                        .aspectRatio(1f)
+                        .border(1.dp, Color.Black)
+                        .background(color = color20)
+                )
+            }
+            repeat(2){
+                Box(
+                    modifier = Modifier
+                        .weight(1f)
+                        .aspectRatio(1f)
+                        .border(1.dp, Color.Black)
+                        .background(color = black)
+                )
+            }
+            repeat(3){
+                Box(
+                    modifier = Modifier
+                        .weight(1f)
+                        .aspectRatio(1f)
+                        .border(1.dp, Color.Black)
+                )
+            }
+        }
+        Row(modifier=Modifier){
+            repeat(5){
+                Box(
+                    modifier = Modifier
+                        .weight(1f)
+                        .aspectRatio(1f)
+                        .border(1.dp, Color.Black)
+                )
+            }
+            repeat(10){
+                Box(
+                    modifier = Modifier
+                        .weight(1f)
+                        .aspectRatio(1f)
+                        .border(1.dp, Color.Black)
+                        .background(color = black)
+                )
+            }
+            repeat(5){
+                Box(
+                    modifier = Modifier
+                        .weight(1f)
+                        .aspectRatio(1f)
+                        .border(1.dp, Color.Black)
+                )
+            }
+        }
+        Row(modifier=Modifier){
+            repeat(5){
+                Box(
+                    modifier = Modifier
+                        .weight(1f)
+                        .aspectRatio(1f)
+                        .border(1.dp, Color.Black)
+                )
+            }
+            repeat(3){
+                Box(
+                    modifier = Modifier
+                        .weight(1f)
+                        .aspectRatio(1f)
+                        .border(1.dp, Color.Black)
+                        .background(color = black)
+                )
+            }
+            repeat(4){
+                Box(
+                    modifier = Modifier
+                        .weight(1f)
+                        .aspectRatio(1f)
+                        .border(1.dp, Color.Black)
+                )
+            }
+            repeat(3){
+                Box(
+                    modifier = Modifier
+                        .weight(1f)
+                        .aspectRatio(1f)
+                        .border(1.dp, Color.Black)
+                        .background(color = black)
+                )
+            }
+            repeat(5){
+                Box(
+                    modifier = Modifier
+                        .weight(1f)
+                        .aspectRatio(1f)
+                        .border(1.dp, Color.Black)
+                )
+            }
+        }
     }
 
 }
