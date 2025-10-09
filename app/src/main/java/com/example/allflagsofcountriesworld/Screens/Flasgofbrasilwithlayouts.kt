@@ -11,10 +11,11 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.Path
 import androidx.compose.ui.graphics.drawscope.Fill
 import androidx.compose.ui.tooling.preview.Preview
+import androidx.constraintlayout.compose.ConstraintLayout
 
 @Composable
 fun brasilwithl(modifier: Modifier =Modifier){
-    Column(modifier= Modifier) {
+    ConstraintLayout(modifier= Modifier){
         Canvas(modifier = modifier.fillMaxSize()) {
             val centerX = size.width / 2
             val centerY = size.height / 2
