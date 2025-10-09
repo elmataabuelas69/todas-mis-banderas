@@ -11,6 +11,9 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.foundation.Canvas
+import androidx.compose.foundation.layout.fillMaxWidth
+import androidx.compose.foundation.layout.height
+import androidx.compose.foundation.layout.padding
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.geometry.Offset
 import androidx.compose.ui.graphics.Path
@@ -20,37 +23,56 @@ import androidx.compose.ui.graphics.drawscope.Stroke
 @Composable
 fun brasil(modifier: Modifier =Modifier){
     Column(modifier= Modifier) {
-
-        Canvas(modifier = modifier.fillMaxSize(), ) {
+        Canvas(modifier = modifier.fillMaxSize()) {
             val centerX = size.width / 2
             val centerY = size.height / 2
-            val halfWidth = size.width / 2
-            val halfHeight = size.height / 2
-
-            val path = Path().apply {
+            val radius = size.minDimension / 3
+            val center = Offset(centerX, centerY)
+            val rombo = Path().apply {
                 moveTo(centerX, 0f)
                 lineTo(size.width, centerY)
                 lineTo(centerX, size.height)
                 lineTo(0f, centerY)
                 close()
             }
+            drawPath(path = rombo, color = Color.Yellow, style = Fill)
 
-            drawPath(
-                path,
-                color = Color.Yellow,
-                style = Fill
+            drawCircle(
+                color = Color.Blue,
+                radius = radius,
+                center = center
             )
-                drawCircle(
-                    color = Color.Blue,
-                    radius = size.minDimension / 3,
-                    center = Offset(size.width / 3, size.height / 3),
 
+            val bandPath = Path().apply {
+                val bandWidth = 20f
+
+                val startX = centerX - radius * 0.9f
+                val endX = centerX + radius * 0.9f
+
+                val startY = centerY - radius * 0.3f
+                val endY = centerY + radius * 0.3f
+
+                moveTo(startX, startY)
+                cubicTo(
+                    centerX - radius * 0.5f, startY - radius * 0.4f,
+                    centerX + radius * 0.5f, endY + radius * 0.4f,
+                    endX, endY
                 )
+                lineTo(endX, endY + bandWidth)
+                cubicTo(
+                    centerX + radius * 0.5f, endY + radius * 0.4f + bandWidth,
+                    centerX - radius * 0.5f, startY - radius * 0.4f + bandWidth,
+                    startX, startY + bandWidth
+                )
+                close()
             }
+            drawPath(path = bandPath, color = Color.White, style = Fill)
 
+        }
 
     }
-}
+    }
+
 @Preview(showBackground = false, showSystemUi = true)
 @Composable
 fun showbrasilflag(){
