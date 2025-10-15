@@ -1,4 +1,4 @@
 package com.example.allflagsofcountriesworld.models
 
-class Celcius {
+class Celcius(): Tipos_de_grados( ) {
 }

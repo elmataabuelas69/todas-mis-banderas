@@ -1,4 +1,4 @@
 package com.example.allflagsofcountriesworld.models
 
-class Farenheit {
+class Farenheit(): Tipos_de_grados() {
 }

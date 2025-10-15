@@ -1,6 +1,6 @@
 package com.example.allflagsofcountriesworld.models
 
-class Tipos_de_grados {
+open class Tipos_de_grados (var numero: Double, var symbol:Char, var unidad:Char, ){
 
 
 }

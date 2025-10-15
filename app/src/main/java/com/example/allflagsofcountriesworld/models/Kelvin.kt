@@ -1,5 +1,5 @@
 package com.example.allflagsofcountriesworld.models
 
-class Kelvin {
+class Kelvin(): Tipos_de_grados() {
 
 }
